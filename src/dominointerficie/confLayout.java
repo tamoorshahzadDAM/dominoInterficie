@@ -33,11 +33,11 @@ public class confLayout extends JFrame {
         opciones.setModel(new DefaultComboBoxModel(new String[]{"2 Jugadores", "3 Jugadores", "4 Jugadores"}));
         txtMessage.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 0)));
 
-        opciones.addItemListener(new ItemListener() {
-            public void itemStateChanged(ItemEvent e) {
-                txtMessage.setText(opciones.getSelectedItem().toString());
-            }
-        });
+//        opciones.addItemListener(new ItemListener() {
+//            public void itemStateChanged(ItemEvent e) {
+//               // txtMessage.setText(opciones.getSelectedItem().toString());
+//            }
+//        });
 
         add(txtMessage);
         add(opciones);
