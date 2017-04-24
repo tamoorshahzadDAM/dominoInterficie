@@ -7,8 +7,6 @@ package dominointerficie;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
-import java.util.logging.*;
 import javax.swing.*;
 
 /**
@@ -18,7 +16,7 @@ import javax.swing.*;
 public class DominoInterficie extends JFrame implements ActionListener {
 
     private JMenuBar menuBar;
-    private JMenu menu, opciones, exit;
+    private JMenu menu, opciones, conf, exit;
     private JMenuItem menuItemJugar, menuItemInfo, menuItemexit;
 
     private JLabel labelImatge, labelColor;
@@ -50,17 +48,22 @@ public class DominoInterficie extends JFrame implements ActionListener {
 
         menu = new JMenu("Menu");
         opciones = new JMenu("Opciones");
+        conf = new JMenu("Configuracion");
         exit = new JMenu("Salir");
   
         menu.add(menuItemJugar);
         opciones.add(menuItemInfo);
+        
         menu.add(menuItemexit);
+        
         
 
         menuBar = new JMenuBar();
         menuBar.add(menu);
         menuBar.add(opciones);
-        menuBar.add(exit);
+        
+        menuBar.add(conf);
+        //menuBar.add(exit);
 
         this.setJMenuBar(menuBar);
 
@@ -84,6 +87,21 @@ public class DominoInterficie extends JFrame implements ActionListener {
         switch (action) {
             case "Salir":
                 System.exit(0);
+                
+                break;
+                
+            case "Jugar":
+                
+                //instanciar la clase de juego
+                
+                confLayout c = new confLayout();
+                
+                
+                break;
+                
+            case "Informacion":
+                
+                //instanciar a la clase para mostrar informacion.
                 
                 break;
             
