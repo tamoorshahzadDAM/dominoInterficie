@@ -97,6 +97,7 @@ public class DominoInterficie extends JFrame implements ActionListener {
                 confLayout c = new confLayout();
                 
                 
+                
                 break;
                 
             case "Informacion":
